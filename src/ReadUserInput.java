@@ -13,12 +13,16 @@ public class ReadUserInput {
             System.out.println("Enter your text (write 'stop' to quit): ");
             String input = scanner.nextLine(); // save user input in the variable input
 
-            //check if user input contains stop
-            if(textAndLines.containsStop(input)) {
+            //check if user input= stop
+            if(textAndLines.isStop(input)) {
                 break;
             }
 
-
+            // check if user input not empty
+            if (input != "") {
+                textAndLines.setText(input);
+                textAndLines.setLines();
+            }
         }
 
         System.out.println("Your results:");

@@ -30,9 +30,10 @@ public class CountLinesAndCharsTest {
     }
 
 
+
     @Test
-    public void containsStop() {
+    public void isStop() {
         CountLinesAndChars countLinesAndChars = new CountLinesAndChars();
-        Assertions.assertTrue( countLinesAndChars.containsStop("stop"));
+        Assertions.assertTrue( countLinesAndChars.isStop("stop"));
     }
 }
