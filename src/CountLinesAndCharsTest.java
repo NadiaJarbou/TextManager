@@ -29,6 +29,7 @@ public class CountLinesAndCharsTest {
         Assertions.assertEquals("NadiaGarbo", countLinesAndChars.getLongestWord());
     }
 
+
     @Test
     public void containsStop() {
         CountLinesAndChars countLinesAndChars = new CountLinesAndChars();

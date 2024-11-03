@@ -50,22 +50,8 @@ public class CountLinesAndChars {
         return longestWord;
     }
 
-    public boolean containsStop(String input) {
-        boolean containstop = false;
-        if (input.equalsIgnoreCase("stop")){
-            containstop = true;
-        }
-        // tolowercase convert text to small letters
-        if (input.toLowerCase().contains("stop")){
-            containstop = true;
-            String[] newInput = input.split("stop", 2);
-            setText(newInput[0].trim());
-            setLines();
-        }
-        else {
-            setText(input);
-            setLines();
-        }
-        return containstop;
+    public boolean isStop(String input) {
+        boolean willStop = input.equalsIgnoreCase("stop");
+        return willStop;
     }
 }

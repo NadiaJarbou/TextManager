@@ -8,6 +8,7 @@ public class ReadUserInput {
         CountLinesAndChars textAndLines = new CountLinesAndChars();
         Scanner scanner = new Scanner(System.in);
 
+
         while (true) {
             System.out.println("Enter your text (write 'stop' to quit): ");
             String input = scanner.nextLine(); // save user input in the variable input
